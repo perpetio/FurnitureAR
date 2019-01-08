@@ -191,7 +191,7 @@ class VirtualObject: SCNReferenceNode {
         guard (minX...maxX).contains(planePosition.x) && (minZ...maxZ).contains(planePosition.z) else {
             return
         }
-        
+               
         // Move onto the plane if it is near it (within 5 centimeters).
         let verticalAllowance: Float = 0.05
         let epsilon: Float = 0.001 // Do not update if the difference is less than 1 mm.

@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     
     var focusSquare = FocusSquare()
     
+    var objectIdicater = FocusSquare()
+    
     /// The view controller that displays the status and "restart experience" UI.
     lazy var statusViewController: StatusViewController = {
         return childViewControllers.lazy.compactMap({ $0 as? StatusViewController }).first!
